@@ -1,0 +1,30 @@
+{
+  "name": "error_cv",
+  "version": "1.0.0",
+  "description": "react error cv client",
+  "main": "index.js",
+  "scripts": {
+    "start": "roadhog server",
+    "build": "roadhog build"
+  },
+  "author": "tshi",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "roadhog": "^2.4.5"
+  },
+  "dependencies": {
+    "antd": "^3.10.3",
+    "dva": "^2.4.1",
+    "history": "^4.7.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}

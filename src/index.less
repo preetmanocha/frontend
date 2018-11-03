@@ -1,0 +1,33 @@
+@dark-grey: #262626;
+@white: #ffffff;
+@primay-color: #73d13d;
+@dark-primay-color: #54ab29;
+@x-dark-primay-color: #398519;
+@xx-dark-primay-color: #235e0d;
+@xxx-dark-primay-color: #133807;
+
+.appLayout {
+  min-height: 100vh;
+}
+.content {
+  padding: 50px;
+}
+.header {
+  color: @white;
+  background-color: @dark-grey;
+  :global .ant-menu {
+    background-color: @dark-grey;
+  }
+}
+.footer {
+  text-align: center;
+  background-color: @dark-grey;
+  color: @white;
+}
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
