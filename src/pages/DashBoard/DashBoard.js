@@ -17,6 +17,10 @@ class DashBoard extends React.PureComponent {
   render() {
     const { dashboard } = this.props
     const columns = [{
+      title: '#',
+      dataIndex: 'number',
+      key: 'number',
+    }, {
       title: 'Company',
       dataIndex: 'company',
       key: 'company',
@@ -46,17 +50,25 @@ class DashBoard extends React.PureComponent {
     }]
 
     const addTool = {
-      label: 'Add new job',
+      label: 'Add new job card',
+      render: () => <Button icon="edit" type="primary" onClick={this.onToggleNewJobForm} />,
+
     }
     return (
       <div>
+        <div className={styles.PageIntroducer}>
+          Welcome Seyfullah
+        </div>
+        <div className={styles.bottomMarginedforinfo}>
+          Here is your job application list
+        </div>
         <div className={styles.tableTitle}>
           Applied Jobs (1)
           <TableToolBar add={addTool} />
         </div>
         <Table columns={columns} dataSource={dashboard.all} />
         <Modal
-          title="Create a new job"
+          title="Edit the job card"
           visible={dashboard.openNewJobForm}
           onOk={this.onToggleNewJobForm}
           onCancel={this.onToggleNewJobForm}

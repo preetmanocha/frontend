@@ -20,14 +20,13 @@ const Router = ({ history, app }) => {
 
   const navs = (
     <Menu
-      theme="dark"
       mode="horizontal"
-      style={{ lineHeight: '64px' }}
+      style={{ lineHeight: '100px' }}
       defaultSelectedKeys={['1']}
     >
-      <Menu.Item key="1">Dash Board</Menu.Item>
-      <Menu.Item key="2">About</Menu.Item>
-      <Menu.Item key="3">Featured Job</Menu.Item>
+      <Menu.Item key="1">APPLICATIONS</Menu.Item>
+      <Menu.Item key="2">METRICS</Menu.Item>
+      <Menu.Item key="3">EGEMEN</Menu.Item>
     </Menu>
   )
 
