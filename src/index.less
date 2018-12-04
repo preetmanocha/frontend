@@ -1,5 +1,9 @@
 @dark-grey: #262626;
 @white: #ffffff;
+@navbar-background: rgba(114,73,251,.8);
+@navbar-text:rgb(240, 240, 240);
+@footer-background: rgba(61, 39, 134, 0.8);
+@footer-text:rgb(211, 211, 211);
 @primay-color: #73d13d;
 @dark-primay-color: #54ab29;
 @x-dark-primay-color: #398519;
@@ -13,21 +17,24 @@
   padding: 50px;
 }
 .header {
-  color: @white;
-  background-color: @dark-grey;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: right;
+  background-color: @navbar-background;
+  height: 100px;
   :global .ant-menu {
-    background-color: @dark-grey;
+    color: @navbar-text;
+    background-color: rgba(114,73,251,.0);
   }
 }
 .footer {
   text-align: center;
-  background-color: @dark-grey;
-  color: @white;
+  background-color: @footer-background;
+  color: @footer-text;
 }
 .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255,255,255,.2);
-  margin: 16px 24px 16px 0;
+  width: 50px;
+  height: 50px;
+  margin: 25px 24px 16px 50px;
   float: left;
 }
